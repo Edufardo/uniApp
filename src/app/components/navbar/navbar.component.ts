@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  logoImage: any = 'assets/graduation.png'
+  
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

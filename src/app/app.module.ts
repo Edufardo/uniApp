@@ -15,7 +15,8 @@ import { SearchComponent } from './components/search/search.component';
     HomeComponent,
     NavbarComponent,
     CardComponent,
-    SearchComponent
+    SearchComponent,
+ 
   ],
   imports: [
     BrowserModule,
