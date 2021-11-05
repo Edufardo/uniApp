@@ -1,8 +1,10 @@
-<div class="card">
-    <img src="">
-    <div class="container">
-      <p>Universidad</p>
-      <p>ca</p> 
-      <p>Fundación</p> 
-    </div>
+<div class="info">
+  <div class="card" *ngFor="let uni of unis; let i = index">
+      <div class="container" >
+        <p>{{ unis[i].university }}</p>
+        <p>{{ unis[i].site}}</p> 
+        <p>{{ unis[i].fundation}}</p> 
+        <p>{{ unis[i].modelo}}</p> 
+      </div>
   </div>
+</div>
