@@ -9,6 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { CardComponent } from './components/card/card.component';
 import { SearchComponent } from './components/search/search.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PhotoformComponent } from './components/photoform/photoform.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -17,13 +20,15 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     CardComponent,
     SearchComponent,
+    PhotoformComponent,
 
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

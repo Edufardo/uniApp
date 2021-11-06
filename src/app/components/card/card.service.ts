@@ -11,5 +11,4 @@ export class CardService {
 	getUnis():Observable<any>{
 		return this.http.get('http://localhost:3000/uni')
 	}
-
 }

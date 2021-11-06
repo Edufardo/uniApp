@@ -1,0 +1,19 @@
+<div class="formm">
+  <button routerLink="/" class="back btn btn-primary"><i class="bi bi-arrow-left"></i></button>
+  <h2 class="text">Añade fotos</h2>
+<form type="submit">
+  <div class="form-group">
+    <label>Site</label>
+    <input type="text" class="form-control" name="site" [(ngModel)]="uniPhoto.site" >
+  </div>
+  <div class="form-group">
+    <label>Imagen Uni</label>
+    <input type="text" class="form-control"  name="imgUni" [(ngModel)]="uniPhoto.imgUni" >
+  </div>
+  <div class="form-group">
+    <label>Imagen ciudad</label>
+    <input type="text" class="form-control"  name="imgSite" [(ngModel)]="uniPhoto.imgSite">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="addPhoto()">Add</button>
+</form>
+</div>
