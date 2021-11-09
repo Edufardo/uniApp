@@ -21,13 +21,12 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  ngOnChanges() {
-    this.filterUni();
-  }
 
-  filterUni(){
-    console.log(this.elementsOriginal);
-    let elementsFiltered = this.elementsOriginal;
-    elementsFiltered = elementsFiltered.filter( (element) => element.university == this.filter )
+  filterUni(filter:string){
+    console.log(filter);
+    let res = this.elementsOriginal
+    console.log(res.filter(elem => elem.university == filter)); 
+    res = res.filter(elem => elem.university == filter)  
+    return res
   }
 }

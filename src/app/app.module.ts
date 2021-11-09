@@ -21,7 +21,6 @@ import { FormsModule } from '@angular/forms';
     CardComponent,
     SearchComponent,
     PhotoformComponent,
-
   ],
   imports: [
     BrowserModule,
