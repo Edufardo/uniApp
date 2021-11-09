@@ -21,8 +21,12 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngOnChanges() {
+    this.filterUni();
+  }
 
   filterUni(){
+    console.log(this.elementsOriginal);
     let elementsFiltered = this.elementsOriginal;
     elementsFiltered = elementsFiltered.filter( (element) => element.university == this.filter )
   }

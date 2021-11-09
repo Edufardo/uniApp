@@ -1,5 +1,5 @@
 <div class="search" >
     <label for="">Busca Universidad</label>
-    <input type="text">
-    <button [(ngModel)]="filter" class="btn btn-success"><i class="bi bi-search"></i></button>
+    <input type="text" [(ngModel)]="filter">
+    <button  class="btn btn-success" (click)="filterUni()"><i class="bi bi-search"></i></button>
 </div>

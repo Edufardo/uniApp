@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class CardComponent implements OnInit {
 
-  
+  public elementsOriginal: UniDto[]
   public uni: UniDto;
   public unis: UniDto[];
   public prov: [] = []
@@ -27,6 +27,7 @@ export class CardComponent implements OnInit {
       modelo: ''
     }
     this.unis = []
+    this.elementsOriginal = []
   }
   ngOnInit(): void {
     this.getUnis()
@@ -55,6 +56,7 @@ export class CardComponent implements OnInit {
       this.loginService.getUnis().subscribe(res => {
         console.log(res);
         this.unis = res
+        this.elementsOriginal = res
         // this.uni = this.unis[4]
         // this.getWeather(this.uni.site);
       });
