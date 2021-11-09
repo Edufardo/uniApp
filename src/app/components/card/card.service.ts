@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { UniDto } from '../constants/UniDto';
 
 @Injectable()
 export class CardService {
@@ -10,6 +9,12 @@ export class CardService {
 
 	getUnis():Observable<any>{
 		return this.http.get('http://localhost:3000/uni')
+	}
+
+	getProvCode(){
+		const url = 'https://www.el-tiempo.net/api/json/v2/provincias'
+		const res = this.http.get(url).toPromise()
+		return res	
 	}
 
 	getWeather(city:string){
