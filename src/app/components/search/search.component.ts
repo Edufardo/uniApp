@@ -10,11 +10,15 @@ export class SearchComponent implements OnInit {
 
 
   @Input() elementsOriginal: UniDto[];
+  items:number[]
   
   public filter: string
 
   constructor() {
-    this.elementsOriginal = []
+    this.elementsOriginal = [
+
+    ]
+    this.items = [1, 2, 3]
     this.filter = ''
    }
 
@@ -23,10 +27,10 @@ export class SearchComponent implements OnInit {
 
 
   filterUni(filter:string){
-    console.log(filter);
-    let res = this.elementsOriginal
-    console.log(res.filter(elem => elem.university == filter)); 
-    res = res.filter(elem => elem.university == filter)  
+    let res = this.elementsOriginal.filter(elem => {
+      elem.site == filter
+    })
+    console.log(res);
     return res
   }
 }

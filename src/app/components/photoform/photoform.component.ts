@@ -15,8 +15,7 @@ export class PhotoformComponent implements OnInit {
   constructor(private photoService: PhotoService) { 
     this.uniPhoto = {
       site: '',
-      imgSite: '',
-      imgUni: '',
+      imgCity: '',
     }
   }
 
