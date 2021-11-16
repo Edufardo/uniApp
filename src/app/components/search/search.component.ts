@@ -27,9 +27,7 @@ export class SearchComponent implements OnInit {
 
 
   filterUni(filter:string){
-    let res = this.elementsOriginal.filter(elem => {
-      elem.site == filter
-    })
+    let res = this.elementsOriginal.filter(elem => elem.site == filter)
     console.log(res);
     return res
   }
